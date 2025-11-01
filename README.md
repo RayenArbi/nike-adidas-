@@ -42,7 +42,7 @@ Nike_Adidas_App/
 - **Optimizer:** Adam (learning rate = 1e-4)
 - **Loss Function:** Categorical Crossentropy
 - **Augmentation:** Random flips, rotations, zoom, and brightness shifts
-- **Accuracy:** ~58–65% (depending on dataset balance)
+- **Accuracy:** ~70%–79% (depending on dataset balance)
 
 ---
 
@@ -50,22 +50,27 @@ Nike_Adidas_App/
 
 ### 1️⃣ Clone the Repository  
 
+```bash
 git clone https://github.com/yourusername/nike-adidas-classifier.git
-cd nike-adidas-classifier
 
+cd nike-adidas-classifier
+```
 ---
 
 ### 2️⃣ (Optional) Create Virtual Environment
-
+```bash
 python -m venv venv
 venv\\Scripts\\activate  # On Windows
 # or
 source venv/bin/activate  # On macOS/Linux
-
+```
 ---
 ### 3️⃣ Install Dependencies
+```bash
 pip install -r requirements.txt
+```
 ---
+
 ### 🧰 requirements.txt
 
 streamlit
@@ -101,20 +106,20 @@ The model will output:
 
 ### 🚢 Streamlit Cloud (Recommended)
 
-Push this project to GitHub
+1. Push this project to GitHub
 
-Go to https://share.streamlit.io
+2. Go to https://share.streamlit.io
 
-Log in with GitHub
+3. Log in with GitHub
 
-Click New App → Choose your repo → Select app.py
+4. Click New App → Choose your repo → Select app.py
 
-Click Deploy
+5. Click Deploy
 
 You’ll get a shareable public URL like:
-
+```bash
 https://yourname-nike-adidas-classifier.streamlit.app
-
+```
 ---
 
 ## 🧱 Model Download (If Too Large for GitHub)
@@ -127,7 +132,7 @@ If your .keras model exceeds 100 MB:
 
 3. Update app.py to download automatically via gdown
 
-
+```bash
 import gdown, os, tensorflow as tf
 
 url = "https://drive.google.com/uc?id=YOUR_FILE_ID"
@@ -137,7 +142,7 @@ if not os.path.exists(output):
     gdown.download(url, output, quiet=False)
 
 model = tf.keras.models.load_model(output)
-
+```
 ---
 
 ## 🧠 Future Improvements
