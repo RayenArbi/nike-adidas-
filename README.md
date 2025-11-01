@@ -65,7 +65,7 @@ source venv/bin/activate  # On macOS/Linux
 ---
 ### 3️⃣ Install Dependencies
 pip install -r requirements.txt
-
+---
 ### 🧰 requirements.txt
 
 streamlit
@@ -80,8 +80,6 @@ pillow
 ### ▶️ Run the App Locally
 
 Then open your browser at:
-
-Always show details
 http://localhost:8501
 
 --- 
