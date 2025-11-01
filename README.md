@@ -161,8 +161,11 @@ model = tf.keras.models.load_model(output)
 
 
 👤 Arbi Rayen
+
 🎓 Data Science & Deep Learning Enthusiast
+
 💼 AI / ML Freelancer | Computer Vision Developer
+
 📧 Contact: arbirayen123.@gmail.com
 
 ---
@@ -178,16 +181,6 @@ model = tf.keras.models.load_model(output)
 ---
 
 ## 🏆 License
-
-This project is released under the MIT License.
-You are free to use, modify, and distribute with attributionn 
-
-Streamlit for making AI deployment simple
-
-Google Colab for model training environment
-
-🏆 License
-
 This project is released under the MIT License.
 You are free to use, modify, and distribute with attribution.
 
