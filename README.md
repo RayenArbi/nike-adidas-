@@ -25,13 +25,14 @@ The app allows users to **upload an image**, view the **predicted brand**, and s
 ---
 
 ## 🧩 Project Structure
-
+```
 Nike_Adidas_App/
 │
-├── app.py # Streamlit web app
-├── mobilenetv2_shoes_final_finetuned.keras # Trained model file (27 MB)
-├── requirements.txt # Dependencies
-
+├── app.py              # Streamlit web app
+├── mobilenetv2_shoes_final_finetuned.keras
+                        # Trained model file (27 MB)
+├── requirements.txt    # Dependencies
+```
 ---
 
 ## 🧪 Model Details
@@ -47,38 +48,44 @@ Nike_Adidas_App/
 
 ## ⚙️ Installation and Setup
 
-### 1️⃣ Clone the Repository
-```bash
+### 1️⃣ Clone the Repository  
+
 git clone https://github.com/yourusername/nike-adidas-classifier.git
 cd nike-adidas-classifier
 
-2️⃣ (Optional) Create Virtual Environment
+---
+
+### 2️⃣ (Optional) Create Virtual Environment
 
 python -m venv venv
 venv\\Scripts\\activate  # On Windows
 # or
 source venv/bin/activate  # On macOS/Linux
 
-3️⃣ Install Dependencies
+---
+### 3️⃣ Install Dependencies
 pip install -r requirements.txt
 
-🧰 requirements.txt
+### 🧰 requirements.txt
 
 streamlit
 tensorflow==2.17.0
 keras==3.3.3
 protobuf==3.20.3
 pillow
-
-🎯 Usage
-▶️ Run the App Locally
+ 
+ ---
+ 
+## 🎯 Usage
+### ▶️ Run the App Locally
 
 Then open your browser at:
 
 Always show details
 http://localhost:8501
 
-🖼️ Upload an Image
+--- 
+### 🖼️ Upload an Image
 
 Click Browse files
 
@@ -89,10 +96,12 @@ The model will output:
 🏷️ Predicted brand (Nike / Adidas)
 
 🔢 Confidence level (%)
+ 
+---
 
-🌍 Deployment
+## 🌍 Deployment
 
-🚢 Streamlit Cloud (Recommended)
+### 🚢 Streamlit Cloud (Recommended)
 
 Push this project to GitHub
 
@@ -106,18 +115,19 @@ Click Deploy
 
 You’ll get a shareable public URL like:
 
-
 https://yourname-nike-adidas-classifier.streamlit.app
 
-🧱 Model Download (If Too Large for GitHub)
+---
+
+## 🧱 Model Download (If Too Large for GitHub)
 
 If your .keras model exceeds 100 MB:
 
-Upload it to Google Drive
+1. Upload it to Google Drive
 
-Get a sharable link
+2. Get a sharable link
 
-Update app.py to download automatically via gdown
+3. Update app.py to download automatically via gdown
 
 
 import gdown, os, tensorflow as tf
@@ -130,29 +140,44 @@ if not os.path.exists(output):
 
 model = tf.keras.models.load_model(output)
 
-🧠 Future Improvements
+---
 
-Improve dataset balance (more equal Nike vs Adidas images)
+## 🧠 Future Improvements
 
-Fine-tune more MobileNetV2 layers
+* Improve dataset balance (more equal Nike vs Adidas images)
 
-Add Grad-CAM visualization (to show where model focuses)
+* Fine-tune more MobileNetV2 layers
 
-Extend to multi-class (e.g., Puma, Reebok, etc.)
+* Add Grad-CAM visualization (to show where model focuses)
 
-🏁 Author
+* Extend to multi-class (e.g., Puma, Reebok, etc.)
+
+---
+
+## 🏁 Author
+
 
 👤 Arbi Rayen
 🎓 Data Science & Deep Learning Enthusiast
 💼 AI / ML Freelancer | Computer Vision Developer
+📧 Contact: arbirayen123.@gmail.com
 
-📧 Contact: your.email@example.com
+---
 
+## ⭐ Acknowledgements
 
+* TensorFlow Team for MobileNetV2
 
-⭐ Acknowledgements
+* Streamlit for making AI deployment simple
 
-TensorFlow Team for MobileNetV2
+* Google Colab for model training environment
+
+---
+
+## 🏆 License
+
+This project is released under the MIT License.
+You are free to use, modify, and distribute with attributionn 
 
 Streamlit for making AI deployment simple
 
