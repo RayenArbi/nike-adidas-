@@ -1,0 +1,19 @@
+https://drive.google.com/file/d/13ljRCKoVSbhJrD7JUyKQbYW0btlM8uOt/view?usp=sharing
+
+import gdown, os, zipfile
+
+for training or loading: 
+
+url = "https://drive.google.com/uc?id=YOUR_FILE_ID_HERE"
+output = "archive.zip"
+
+# Download only once
+if not os.path.exists(output):
+    print("⬇️  Downloading dataset from Google Drive...")
+    gdown.download(url, output, quiet=False)
+
+# Extract if zip
+if output.endswith(".zip"):
+    with zipfile.ZipFile(output, "r") as zip_ref:
+        zip_ref.extractall("dataset")
+    print("✅ Dataset extracted to /dataset")
